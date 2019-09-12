@@ -1,24 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" href="http://cybersecuritycareers.me/letter_c_PNG71.png">
-	<title>Cybersecurity Careers</title>
+  <link rel="icon" href="http://cybersecuritycareers.me/letter_c_PNG71.png">
+  <title>Cybersecurity Careers</title>
+  
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Nunito);
 
-	
-<style>
-.button {
-   display: inline-block;
-  border-radius: 4px;
-  background-color: #4A5B49;
-  border: none;
-  color: #FFFFFF;
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 100%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
   text-align: center;
-  font-size: 18px;
-  padding: 5px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;}
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("http://cybersecuritycareers.me/cyber-security-3374252_1920.jpg");
+  z-index:2;
+}
+
+#title h1,h3 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+#slide1:before {
+  background: #222;
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background: #222;  z-index:2;
+}
+
+#slide3:before {
+  background: #222;
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background: #222;
+}
 .button1 {
   display: inline-block;
   border-radius: 4px;
@@ -33,64 +142,61 @@
   cursor: pointer;
   margin: 5px;
 }
-
-
-
-.button
-{
-  position: absolute;
-    top: auto;
-    left: 42%;
-}
 .button1
 {
-	position: absolute;
-    top: 0%;
-    right: 5%;
-}
-
-div{
-	 margin: auto;
+  position: absolute;
+    top: 60%;
+    right: 45%;
 }
 
 
-  .button2 {
-  background-color: #191919; 
-  color: white; 
-  border: 2px solid #4CAF50;
-}
-
-.button2:hover {
-  background-color: #4CAF50;
-  color:#191919 ;
-}
-body {
-  background-color: #191919;
-}
-
-</style>
-
-
-
+  </style>
 </head>
 <body>
-	<div class="wrapper">
-	<a href="http://cybersecuritycareers.me/author.html">
-<button class="button1" style="vertical-align:middle"><span>About the Author </span></button>
+<div id="title" class="slide header">
+  <h1>Welcome to Cybersecurity Careers</h1>
+  <h3>Build your Entry level career in Cybersecurity</h3>
+</div>
+
+<div id="slide1" class="slide">
+  <div class="title">
+    <h2>Ultimate Guide for starting career in Cybersecurity</h2>
+    <p>Developing a career in cybersecurity is complicated, concluded, and confusing as there are several sources of information advising you to choose assorted services and follow career advice from credible industry experts.  
+Although there are a considerable amount of quality online learning platforms, academic institutional programs, and organized learning communities teaching and preparing students for “cyber careers”, a lack of clarity, guidance, and authentic interest continues to persist.</p>
+<button>Click Here.</button>
+  </div>
+
+</div>
+
+<div id="slide2" class="slide">
+  <div class="title">
+    <h2>The 5 Main Ways You Can Start Learning Cybersecurity + Resources</h2>
+    <p>The idea of “cybersecurity” is a hot topic in today’s pervasive online and digital presence.  As the cyber industry continues to expand with new positions opening, skills in demand, and the required frameworks necessary for compliance, the need for quality, affordable, and actionable education has never been more apparent.<br>
+What learning path should I take?  How do I learn cybersecurity?</p>
+<button>Click Here.</button>
+  </div>
+  <img src="http://cybersecuritycareers.me/hacker-2300772_1920.jpg">
+  <img src="http://cybersecuritycareers.me/spyware-2319403_1280.jpg"> 
+</div>
+
+<div id="slide3" class="slide">
+  <div class="title">
+    <h2>52 Concepts Cybersecurity Students Should Learn Today</h2>
+    <p>The potential for cybersecurity careers and professions are countlessly growing in number, making for the word “cybersecurity” to continuously expand into various domains of I.T. and business.
+As a student (either discovering, complete novice, skilled, or entry-level professional in the making), understanding the concepts behind “cybersecurity” can appear to be daunting.  <br>
+CyberInternAcademy has compiled a list of 52 concepts students should familiarize themselves with when considering “cybersecurity” as a career, concept, product, or specific skill.</p>
+<button>Click Here.</button>
+  </div>
+</div>
+
+<div id="slide4" class="slide header">
+    <h1>About the Author</h1>
+    <div class="wrapper">
+  <a href="http://cybersecuritycareers.me/author.html">
+<button class="button1" style="vertical-align:middle"><span>Click Here.</span></button>
 </a>
 </div>
-	<h1 align="Middle" style="color: white;" >Cybersecuriy Careers</h1>
-	<h2 align="Middle" style="color: white; background-color: #4A5B49">BUILD YOUR ENTRY LEVEL CYBER CAREER</h2>
-	<h2 align="Middle" style="color: white">A Resource for Anyone and Everyone</h2>
-	<button class="button2">
-    <h1>Where Do You Begin Your Cyber Career?</h1>
-    <p>Welcome to cybersecuritycareers.me, a platform addressing, educating, preparing, and ultimately helping you develop an entry-level career in cybersecurity.  CybersecurityCareer has developed multiple sections including an extensive preparation section, recommended resources for students, and education on intern and entry-level careers sections.</p></button>
-    <h1>.</h1>
-<div class="wrapper">
-	<a href="http://cybersecuritycareers.me/cyber1.html">
-<button class="button"><span>Start Here </span></button>
-</a>
 </div>
 </body>
-
 </html>
+
